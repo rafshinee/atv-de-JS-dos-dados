@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo de Dados</title>
+	<script src="script.js" defer> </script>
+ </head>
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+ <style>
+    body {
+        background-color: rgb(205, 174, 235);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+ </style>
+<body>
+	<h1>Jogo de Dados</h1>
+	<p>Jogador 1: <button id="jogador1" onclick="jogarDado(1)">Jogar Dado 1</button></p>
+	<p>Jogador 2: <button id="jogador2" onclick="jogarDado(2)" disabled>Jogar Dado 2</button></p>
+	<p><button id="reiniciar" onclick="reiniciarJogo()" >reiniciar</button>
+		<div id="resultado"></div>
+
+<table id="tabela-rodadas">
+  <thead>
+    <tr>
+      <th>Jogador 1</th>
+      <th>Jogador 2</th>
+    </tr>
+  </thead>
+  <body>
+    <tr>
+      <td id="jogador1-contador">0</td>
+      <td id="jogador2-contador">0</td>
+    </tr>
+  </body>
+</table>
+
+
+<button id="reiniciar" onclick="reiniciarJogo()" style="display:none">Reiniciar jogo</button>
